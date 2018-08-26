@@ -1,0 +1,29 @@
+---
+title: "Assignment week 3"
+author: "Bas Millaard"
+date: "25 August 2018"
+output: ioslides_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+library(plotly)
+cars
+```
+
+
+
+## Assignment set up
+
+- Load library plotly
+- load cars data set
+- create a plot 
+
+
+## Slide with R Output
+
+```{r, echo = FALSE, fig.align='center'}
+
+plot_ly(cars, x = ~speed, y = ~dist, mode = "markers")
+```
+
